@@ -3,6 +3,14 @@ import { useState } from "react";
 function App() {
   const [count, setCount] = useState(0);
 
+if (count <= -1 ) {
+setCount(count + 1)
+
+}
+
+
+
+
   return (
     <div>
       <h1>MY CLASS ATTENDECE DAY</h1>

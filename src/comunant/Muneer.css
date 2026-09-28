@@ -14,10 +14,10 @@ body {
   background:
     radial-gradient(
       circle at 50% -10%,
-      rgba(124, 58, 237, 0.35),
+      rgba(58, 237, 237, 0.35),
       transparent 35%
     ),
-    linear-gradient(135deg, #07070a 0%, #111118 50%, #07070a 100%);
+    linear-gradient(135deg, #b39e42 0%, #4ca331 50%, #4a4a94 100%);
 }
 
 /* Main */
@@ -26,10 +26,11 @@ body > div {
 
   display: flex;
   flex-direction: column;
+
   justify-content: center;
   align-items: center;
 
-  padding: 30px;
+  text-align: center;
 }
 
 /* Counter Title */
@@ -63,9 +64,9 @@ h2 {
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 35px;
+  margin: auto;
 
-  border-radius: 50%;
+  border-radius: 50% ;
 
   font-size: 100px;
   font-weight: 800;
