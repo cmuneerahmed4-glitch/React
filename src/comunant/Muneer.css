@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+
+  background:
+    radial-gradient(
+      circle at 50% -10%,
+      rgba(124, 58, 237, 0.35),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #07070a 0%, #111118 50%, #07070a 100%);
+}
+
+/* Main */
+body > div {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+/* Counter Title */
+h1 {
+  font-size: 75px;
+  font-weight: 800;
+  letter-spacing: -3px;
+
+  color: #ffffff;
+
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  text-shadow: 0 5px 25px rgba(255, 255, 255, 0.15);
+
+  transition: 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.03);
+  text-shadow: 0 8px 35px rgba(124, 58, 237, 0.4);
+}
+
+/* Counter Box */
+h2 {
+  width: 260px;
+  height: 260px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 35px;
+
+  border-radius: 50%;
+
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -6px;
+
+  color: #fff;
+
+  background:
+    radial-gradient(
+      circle at 35% 25%,
+      rgba(255, 255, 255, 0.12),
+      transparent 45%
+    ),
+    rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 0 0 8px rgba(255, 255, 255, 0.02),
+    0 25px 70px rgba(0, 0, 0, 0.6),
+    0 0 50px rgba(124, 58, 237, 0.15);
+
+  backdrop-filter: blur(20px);
+
+  transition: all 0.35s ease;
+}
+
+/* Counter Hover */
+h2:hover {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 0 0 8px rgba(124, 58, 237, 0.05),
+    0 30px 80px rgba(0, 0, 0, 0.7),
+    0 0 70px rgba(124, 58, 237, 0.25);
+}
+
+/* Buttons */
+button {
+  min-width: 155px;
+
+  padding: 15px 26px;
+
+  margin: 7px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.25s ease;
+}
+
+/* Button Hover */
+button:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(255, 255, 255, 0.25);
+
+  background: rgba(255, 255, 255, 0.12);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Click */
+button:active {
+  transform: scale(0.96);
+}
+
+/* Increase */
+button:first-of-type {
+  color: #fff;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #6366f1
+  );
+
+  border: none;
+
+  box-shadow:
+    0 10px 30px rgba(124, 58, 237, 0.35);
+}
+
+button:first-of-type:hover {
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #818cf8
+  );
+
+  box-shadow:
+    0 15px 40px rgba(124, 58, 237, 0.5);
+}
+
+/* Decrease */
+button:last-of-type {
+  color: #d4d4d8;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    width: 220px;
+    height: 220px;
+    font-size: 80px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+}

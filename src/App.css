@@ -1,0 +1,80 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.counter-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #1e293b;
+  margin-bottom: 25px;
+}
+
+.count {
+  font-size: 70px;
+  color: #2563eb;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.increase {
+  background: #22c55e;
+  color: white;
+}
+
+.decrease {
+  background: #ef4444;
+  color: white;
+}
+
+.reset {
+  background: #2563eb;
+  color: white;
+}
+
+button:active {
+  transform: scale(0.98);
+}
